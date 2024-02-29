@@ -123,13 +123,11 @@ body {
     margin-left: 10vw;
 }
 
-.introduction {
-    font-family: Kanit;
+#introduction-section {
     height: 500px;
-    margin-top: 6vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .left-intro {
@@ -143,16 +141,16 @@ body {
 .me {
     width: 85%;
     height: 100%;
-    overflow: hidden;
     align-self: center;
     justify-self: center;
     border: 1px solid var(--primary);
-    border-bottom: transparent;
+    border-radius: 15px;
 }
 
 .me img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .name {
@@ -171,10 +169,11 @@ body {
 }
 
 .socials {
-    margin-left: 6.5rem;
+    justify-content: center;
     display: flex;
     color: var(--tertiary);
     margin-bottom: 0px;
+    margin-right: 20px;
 }
 
 .LinkedIn {
@@ -195,7 +194,7 @@ body {
 }
 
 .Github {
-    margin-left: 2rem;
+    margin-left: 45px;
     color: var(--secondary);
     font-weight: bold;
     cursor: pointer;
@@ -225,7 +224,7 @@ body {
     margin-top: 64px;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
     color: var(--primary);
     line-height: 60px;
 }
@@ -238,7 +237,7 @@ body {
     margin: 5px;
 }
 
-.technologies-section {
+#technologies-section {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -303,7 +302,7 @@ body {
     flex: 1;
 }
 
-.projects-section {
+#projects-section {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -382,19 +381,14 @@ body {
     border-radius: 10px;
 }
 
-.contact-section {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-}
-
 .contact-heading {
     font-size: 4rem;
-    text-align: left;
+    text-align: center;
     font-weight: 100;
-    padding-right: 0;
-    margin-bottom: 200px;
-    align-self: center;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    align-self: center; /* Center horizontally */
 }
 
 .contact-heading::after {
@@ -402,58 +396,60 @@ body {
     border-bottom: 1px solid;
     border-color: var(--primary);
     display: block;
-    width: 50%;
-    margin-left: 75px;
+    width: 10%;
+    margin-left: 44%;
 }
 
 #contact-me-section {
-    align-self: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px; /* Adjust margin-top as needed */
     margin-bottom: 200px;
 }
 
 #contact-box {
-    border: dashed 1px;
+    border: 1px dashed black;
     width: 500px;
+    max-width: 100%; /* Ensure responsiveness */
     height: 400px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
 }
-
 .form-group {
     margin-top: 20px;
     display: flex;
-    justify-content: left;
-    margin-left: 20px;
+    justify-content: center; /* Center horizontally */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
     gap: 10px;
 }
 
 .form-control {
-    border: solid 1px;
-    border-color: var(--primary);
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 #email {
     width: 200px;
+    margin-left: 5px;
 }
 
 #message {
-    resize: none !important;
+    resize: none;
     width: 380px;
 }
 
 .submit-button {
-    margin-left: 40%;
     margin-top: 20px;
     width: 100px;
     height: 40px;
-    background-color: var(--primary);
-    color: white !important;
-    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 .submit-button:hover {
@@ -461,6 +457,6 @@ body {
 }
 
 .submit-button:active {
-    opacity: 40%;
+    opacity: 0.8;
 }
 
