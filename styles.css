@@ -16,28 +16,9 @@ body {
     cursor: default !important;
 }
 
-.circles {
-    position: relative;
-    overflow: hidden;
-}
-
-.circles::after {
-    content: '';
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: red;
-    border-radius: 50%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    top: -60%; /* change value as required */
-    right: -20%; /* change value as required */
-}
-
 .header {
     font-family: Kanit;
-    margin-top: 22.5px;
+    margin-top: 2rem;
     width: 100%;
     height: 12%;
     display: flex;
@@ -47,7 +28,7 @@ body {
 }
 
 .cornerR, .cornerL {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--primary);
     /*background-color: red; */
     display: flex !important;
@@ -58,7 +39,7 @@ body {
     color: var(--tertiary);
     font-size: 1.2rem;
     display: flex !important;
-    gap: 30px;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -81,13 +62,13 @@ body {
 #vll {
     border-left: 1px solid;
     border-color: var(--primary);
-    height: 80px;
+    height: 5rem;
 }
 
 #vlr {
     border-left: 1px solid;
     border-color: var(--primary);
-    height: 80px;
+    height: 5rem;
 }
 
 .CV {
@@ -95,10 +76,10 @@ body {
     font-size: 1.5rem;
     margin-right: 7vw;
     border: #5c5c5c 1px solid;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 10%;
     cursor: pointer;
 }
@@ -124,18 +105,18 @@ body {
 }
 
 #introduction-section {
-    height: 500px;
+    height: 31.25rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 300px;
+    margin-bottom: 20rem;
 }
 
 .left-intro {
-    margin-left: 25px;
+    margin-left: 2rem;
 }
 
 .right-intro {
-    margin-right: 25px;
+    margin-right: 2rem;
 }
 
 .me {
@@ -155,7 +136,7 @@ body {
 
 .name {
     font-size: 4rem;
-    line-height: 60px;
+    line-height: 4rem;
     font-weight: bold;
     color: var(--primary);
     text-align: left;
@@ -172,8 +153,8 @@ body {
     justify-content: center;
     display: flex;
     color: var(--tertiary);
-    margin-bottom: 0px;
-    margin-right: 20px;
+    margin-bottom: 0rem;
+    margin-right: 1.5rem;
 }
 
 .LinkedIn {
@@ -182,35 +163,35 @@ body {
     border-color: var(--primary);
     width: 5rem;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .LinkedIn::after {
     content: "";
     position: relative;
     border-right: 1px solid;
-    left: 25px;
+    left: 1.5625rem;
     border-color: var(--primary);
 }
 
 .Github {
-    margin-left: 45px;
+    margin-left: 2.825rem;
     color: var(--secondary);
     font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .paragraph1, .paragraph2 {
     margin-top: 4rem;
     color: var(--secondary);
-    margin-top: 10px;
+    margin-top: 1.125rem;
     font-size: 1rem;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .paragraph2::before {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .paragraph1, .paragraph2::before { 
@@ -221,12 +202,12 @@ body {
 } 
 
 .wid {
-    margin-top: 64px;
+    margin-top: 4rem;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
     color: var(--primary);
-    line-height: 60px;
+    line-height: 3rem;
 }
 
 .h1 {
@@ -234,19 +215,19 @@ body {
 }
 
 .h3 {
-    margin: 5px;
+    margin: 0.5rem;
 }
 
 #technologies-section {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 .technologies-heading {
     font-size: 4rem;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 6.25rem;
     font-weight:100;
     padding-right: 0;
 }
@@ -264,46 +245,46 @@ body {
     border-bottom: 1px solid;
     border-color: var(--primary);
     display: block;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 3rem;
+    margin-left: 3rem;
     opacity: 30%;
 }
 
 .technologies-box {
     width: 50%;
-    height: 200px;
+    height: 12.5rem;
     align-self: center;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 6.25rem;
+    margin-top: 6.25rem;
     display: flex;
     flex-flow: row nowrap;
-    gap: 150px;
+    gap: 10rem;
     align-items: center;
     overflow-x: scroll;
 }
 
 .descriptions {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .icons {
-    max-width: 100px; 
-    max-height: 100px;
-    min-width: 100px;
-    min-height: 100px;
+    max-width: 6.25rem; 
+    max-height: 6.25rem;
+    min-width: 6.25rem;
+    min-height: 6.25rem;
     flex: 1;
 }
 
 #projects-section {
-    margin-top: 100px;
+    margin-top: 6.25rem;
     display: flex;
     flex-direction: column;
 }
@@ -311,11 +292,11 @@ body {
 .projects-heading {
     font-size: 4rem;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 3rem;
     font-weight:100;
     padding-right: 0;
     margin-left: 70%;
-    margin-bottom: 200px;
+    margin-bottom: 12.5rem;
 }
 
 .projects-heading::after {
@@ -328,7 +309,7 @@ body {
 }
 
 .projects-box {
-    height: 500px;
+    height: 31.25rem;
     width: 80%;
     align-self: center;
     display: flex;
@@ -337,7 +318,7 @@ body {
 
 .project-title {
     align-self: center;
-    margin-right: 30px;
+    margin-right: 2rem;
 }
 
 .project-title::after {
@@ -347,31 +328,31 @@ body {
     display: block;
     width: 50%;
     opacity: 30%;
-    margin-left: 80px;
+    margin-left: 5rem;
 }
 
 .project-info1 {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 2rem;
     flex: 1;
 }
 
 .project-info2 {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 2rem;
     flex: 1;
 }
 
 .project-description {
-    font-size: 22px;
-    margin-top: 35px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 .project-logos {
     align-self: center;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 .project-image {
@@ -385,9 +366,9 @@ body {
     font-size: 4rem;
     text-align: center;
     font-weight: 100;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 200px;
+    padding-right: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-top: 12.5rem;
     align-self: center; /* Center horizontally */
 }
 
@@ -404,15 +385,15 @@ body {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-top: 50px; /* Adjust margin-top as needed */
-    margin-bottom: 200px;
+    margin-top: 3rem; /* Adjust margin-top as needed */
+    margin-bottom: 12.5rem;
 }
 
 #contact-box {
     border: 1px dashed black;
-    width: 500px;
+    width: 31.25rem;
     max-width: 100%; /* Ensure responsiveness */
-    height: 400px;
+    height: 25rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -420,12 +401,12 @@ body {
     align-items: center; /* Center horizontally */
 }
 .form-group {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center; /* Center horizontally */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .form-control {
@@ -434,22 +415,22 @@ body {
 }
 
 #email {
-    width: 200px;
-    margin-left: 5px;
+    width: 12.5rem;
+    margin-left: 0.5rem;
 }
 
 #message {
     resize: none;
-    width: 380px;
+    width: 25rem;
 }
 
 .submit-button {
-    margin-top: 20px;
-    width: 100px;
-    height: 40px;
+    margin-top: 1.25rem;
+    width: 6.25rem;
+    height: 2.5rem;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .submit-button:hover {
