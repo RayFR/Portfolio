@@ -45,18 +45,26 @@ body {
 
 #Technologies {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
 }
 
 #Projects {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
 }
 
 #Contact {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
 }
 
-#Introduction {
+#About-me {
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
 }
 
 #vll {
@@ -106,32 +114,19 @@ body {
 
 #introduction-section {
     height: 31.25rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6.25rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.left-intro {
-    margin-left: 2rem;
-}
-
-.right-intro {
-    margin-right: 2rem;
-}
-
-.me {
-    width: 85%;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-    border: 1px solid var(--primary);
-    border-radius: 15px;
-}
-
-.me img {
+.name-socials {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
@@ -140,9 +135,21 @@ body {
     font-weight: bold;
     color: var(--primary);
     text-align: left;
-    margin-left: 3rem;
+    width: 40%;
     margin-bottom: 3.5rem;
 }
+
+.name::after {
+    content: "";
+    border-bottom: 1px solid;
+    border-color: var(--primary);
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-right: 20rem;
+}
+
 
 .dot {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -151,10 +158,11 @@ body {
 
 .socials {
     justify-content: center;
+    align-self: center;
     display: flex;
     color: var(--tertiary);
     margin-bottom: 0rem;
-    margin-right: 1.5rem;
+    width: 40%;
 }
 
 .LinkedIn {
@@ -182,32 +190,41 @@ body {
     font-size: 1.125rem;
 }
 
-.paragraph1, .paragraph2 {
-    margin-top: 4rem;
-    color: var(--secondary);
-    margin-top: 1.125rem;
-    font-size: 1rem;
-    padding-top: 1.25rem;
+.wid-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 80%;
+    margin-top: 5rem;
 }
 
-.paragraph2::before {
-    margin-bottom: 1.25rem;
+.me {
+    width: 50%;
+    height: 60%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    flex-grow: 5;
 }
 
-.paragraph1, .paragraph2::before { 
-    content: ""; 
-    display: block; 
-    border-top: 1px solid;
-    border-color: var(--primary);
-} 
+.me img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
 
 .wid {
-    margin-top: 4rem;
     font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
+    font-weight: 200;
     color: var(--primary);
     line-height: 3rem;
+    width: 70%; 
+    margin-left: 9rem;
 }
 
 .h1 {
@@ -216,6 +233,52 @@ body {
 
 .h3 {
     margin: 0.5rem;
+}
+
+#about-me-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.25rem;
+    align-items: center;
+}
+
+.about-me-heading {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 3rem;
+    font-weight: 200;
+    padding-right: 0;
+    margin-left: 70%;
+    margin-bottom: 12.5rem;
+}
+
+.about-me-heading::after {
+    content: "";
+    border-bottom: 1px solid;
+    border-color: var(--primary);
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+}
+
+.about-me-box {
+    height: 15rem;
+    opacity: 100%;
+    width: 80%;
+    max-width: 100%; /* Ensure responsiveness */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin-bottom: 9rem;
+    border-radius: 20px;
+    gap: 4rem;
+    padding: 2rem;
+    border: var(--primary) dashed 3px;
+}
+
+.about-paragraph {
+    font-weight: 300;
 }
 
 #technologies-section {
@@ -228,7 +291,7 @@ body {
     font-size: 4rem;
     text-align: left;
     margin-left: 6.25rem;
-    font-weight:100;
+    font-weight: 200;
     padding-right: 0;
 }
 
@@ -271,8 +334,8 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .icons {
@@ -293,7 +356,7 @@ body {
     font-size: 4rem;
     text-align: left;
     margin-left: 3rem;
-    font-weight:100;
+    font-weight: 200;
     padding-right: 0;
     margin-left: 70%;
     margin-bottom: 12.5rem;
@@ -319,6 +382,7 @@ body {
 .project-title {
     align-self: center;
     margin-right: 2rem;
+    font-weight: 400;
 }
 
 .project-title::after {
@@ -326,7 +390,7 @@ body {
     border-bottom: 1px solid;
     border-color: var(--primary);
     display: block;
-    width: 50%;
+    width: 30%;
     opacity: 30%;
     margin-left: 5rem;
 }
@@ -336,6 +400,7 @@ body {
     flex-direction: column;
     margin-right: 2rem;
     flex: 1;
+    font-weight: 200;
 }
 
 .project-info2 {
@@ -365,7 +430,7 @@ body {
 .contact-heading {
     font-size: 4rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: 200;
     padding-right: 1.25rem;
     margin-bottom: 1.25rem;
     margin-top: 12.5rem;

@@ -7,7 +7,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,7 +22,7 @@
                 <a id="Technologies" href="#technologies-section">Technologies</a>
                 <a id="Projects" href="#projects-section">Projects</a>
                 <a id="Contact" href="#contact-me-section">Contact</a>
-                <a id="Introduction" href="#introduction-section">Introduction</a>
+                <a id="About-me" href="#about-me-section">About Me</a>
             </div>
 
             <div class="cornerR">
@@ -30,34 +30,34 @@
                 <div id="vlr"></div>
             </div>
         </div>
-
+        
         <section id="introduction-section">
-            <div class="left-intro">
-                <div class>
-                    <p class="name">Freddie Crumpton<span class="dot">.</span></p>
+            <div class="name-socials">
+                <p class="name">Freddie Crumpton<span class="dot">.</span></p>
+                <div class="wid">
+                    Software Developer. Computer Science Student.
                 </div>
+            </div>
+            <div class="wid-pic">
+                <div class="me"><img src="placeholder.jpg"></div>
                 <div class="socials">
                     <p class="LinkedIn"><a href="https://www.linkedin.com/in/freddie-ray-crumpton-458236256/" style="text-decoration: none; color: black;">LinkedIn</a></p>
                     <p class="Github"><a href="https://github.com/RayFR" style="text-decoration: none; color: black;">Github</a></p>
-                </div>
-                <div>
-                    <div class="paragraph1">Hi! I'm Freddie, I am a developer based in Birmingham, UK. As a junior developer, I continue to strive in learning new programming languages, frameworks, and theories. Beyond the keyboard, you'll often find me in the gym or playing a new sport, as I believe that a healthy body complements a sharp mind. This commitment to fitness not only keeps me in top shape but also instils discipline and perseverance, qualities that seamlessly translate into my work.</div>
-                </div>
-            </div>
-            <div class="me"><img src="monkey7.jpg"></div>
-            <div class="right-intro">
-                <div class="wid">
-                    Software Developer - Computer Science Student.
-                </div>
-                <div>
-                    <p class="paragraph2">
-                        I am a passionate software developer with a knack for constantly challenging myself and learning from any and all experiences. This comes from my deep-rooted love for all things code, including exploring new and exciting frontiers in the realm of modern development. Nothing interests me more than being able to tackle complex problems, breaking them down into manageable pieces and crafting efficient and effective solutions.
-                    </p>
                 </div>
             </div>
         </section>
 
         <div class="line"></div>
+
+        <section id="about-me-section">
+            <h1 class="about-me-heading">About Me</h1>
+            <div class="about-me-box">
+                <p class="about-paragraph">Hi! I'm Freddie, I am a developer based in Birmingham, UK. As a junior developer, I continue to strive in learning new programming languages, frameworks, and theories. Beyond the keyboard, you'll often find me in the gym or playing a new sport, as I believe that a healthy body complements a sharp mind. This commitment to fitness not only keeps me in top shape but also instils discipline and perseverance, qualities that seamlessly translate into my work.</p>
+                <p class="about-paragraph">I am a passionate software developer with a knack for constantly challenging myself and learning from any and all experiences. This comes from my deep-rooted love for all things code, including exploring new and exciting frontiers in the realm of modern development. Nothing interests me more than being able to tackle complex problems, breaking them down into manageable pieces and crafting efficient and effective solutions.</p>
+            </div>
+        </section>
+
+        <div class="line"></div>       
 
         <section id="technologies-section">
             <h2 class="technologies-heading">My Technologies</h2>            
@@ -146,9 +146,9 @@
                   <input type="text" class="form-control" id="surname" name="surname">
                 </div>
               </div>
-              <div class="form-group">
-                <label for="email" style="margin-left: 15px; margin-right: 20px;">Email</label>
-                <input required type="email" class="form-control" id="email" name="email">
+              <div class="form-group" style="margin-left: 9.1rem;">
+                <label for="email">Email</label>
+                <input required type="email" class="form-control" id="email" name="email" style="margin-left: 1rem;">
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
@@ -157,5 +157,6 @@
               <button onclick="confirmSent()"type="submit" class="submit-button">Submit</button>
             </form>
         </section>
+    <script src="script.js"></script>
     </body>
 </html>
