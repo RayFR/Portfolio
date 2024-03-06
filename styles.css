@@ -1,9 +1,7 @@
 :root {
-    --primary: #190061;
-    --secondary: #05001b;
-    --tertiary0: #3500D3;
-    --tertiary1: #310d9e;
-    --tertiary2: #282828;
+    --primary: rgb(59, 241, 241);
+    --secondary: #090f05;
+    --tertiary0: #ffffff;
 }
 
 p {
@@ -33,6 +31,36 @@ body {
     align-items: center;
 }
 
+.header nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--tertiary0);
+    transition: color 0.3s ease-in-out;
+}
+
+.header nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.header nav a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Remove the text-decoration underline for non-hovered links */
+.header nav a:not(:hover) {
+    text-decoration: none;
+}
+
 .cornerR, .cornerL {
     font-size: 2.5rem;
     color: var(--primary);
@@ -47,6 +75,28 @@ body {
     display: flex !important;
     gap: 2rem;
     align-items: center;
+}
+
+.middle a {
+    position: relative;
+    text-decoration: none;
+    color: var(--tertiary0);
+    transition: color 0.3s ease-in-out;
+}
+
+.middle a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease-in-out;
+}
+
+.middle a:hover::after {
+    width: 100%;
 }
 
 #Technologies {
@@ -86,29 +136,25 @@ body {
 }
 
 .CV {
-    color: var(--tertiary1);
+    color: var(--primary);
     font-size: 1.5rem;
     margin-right: 7vw;
-    border: var(--tertiary0) 1px solid;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 10%;
     cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out; /* Add transition property */
 }
 
-.CV:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
+.CV:hover {
+    box-shadow: 0 0 0 1px var(--primary); /* Apply box shadow on hover */
+}
+
 
 #initials {
     font-size: 2.5rem;
     margin-left: 5vw;
     cursor: default;
-    color: var(--tertiary1);
+    color: var(--primary);
 }
 
 .cornerR {
@@ -160,7 +206,7 @@ body {
 
 .dot {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--tertiary1);
+    color: var(--primary);
 }
 
 .anchor {
@@ -184,6 +230,7 @@ body {
     width: 5rem;
     cursor: pointer;
     font-size: 1.125rem;
+    transition: color 0.3s ease-in-out;
 }
 
 .LinkedIn::after {
@@ -200,7 +247,9 @@ body {
     font-weight: bold;
     cursor: pointer;
     font-size: 1.125rem;
+    transition: color 0.3s ease-in-out;
 }
+
 
 .wid-pic {
     display: flex;
@@ -219,7 +268,7 @@ body {
     height: 60%;
     align-self: center;
     justify-self: center;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     border-radius: 15px;
     flex-grow: 5;
 }
@@ -269,7 +318,7 @@ body {
 .about-me-heading::after {
     content: "";
     border-bottom: 1px solid;
-    border-color: var(--tertiary1);
+    border-color: var(--primary);
     display: block;
     width: 50%;
     margin-left: 50%;
@@ -314,7 +363,7 @@ body {
 .technologies-heading::after {
     content: "";
     border-bottom: 1px solid;
-    border-color: var(--tertiary1);
+    border-color: var(--primary);
     display: block;
     width: 10%;
 }
@@ -384,7 +433,7 @@ body {
 .projects-heading::after {
     content: "";
     border-bottom: 1px solid;
-    border-color: var(--tertiary1);
+    border-color: var(--primary);
     display: block;
     width: 30%;
     margin-left: 40%;
@@ -433,7 +482,7 @@ body {
 .project-description {
     font-size: 1.5rem;
     margin-top: 2rem;
-    color: var(--tertiary1);
+    color: var(--tertiary0);
 }
 
 .project-logos {
@@ -452,7 +501,6 @@ body {
     font-size: 4rem;
     text-align: center;
     font-weight: 200;
-    padding-right: 1.25rem;
     margin-bottom: 1.25rem;
     margin-top: 12.5rem;
     align-self: center; /* Center horizontally */
@@ -478,8 +526,7 @@ body {
 }
 
 #contact-box {
-    border: 1px dashed black;
-    border-color: var(--tertiary1);
+    border: 1px dashed var(--tertiary0);
     width: 31.25rem;
     max-width: 100%; /* Ensure responsiveness */
     height: 25rem;
@@ -524,7 +571,7 @@ body {
     height: 2.5rem;
     background-color: var(--tertiary0);
     color: var(--secondary);
-    border-color: var(--tertiary0);
+    border-color: var(--primarys);
     border-radius: 5px; 
 }
 
@@ -535,4 +582,7 @@ body {
 .submit-button:active {
     opacity: 0.8;
 }
+
+
+
 
