@@ -186,10 +186,11 @@ body {
     font-size: 4rem;
     line-height: 4rem;
     font-weight: bold;
-    color: var(--tertiary0);
+    color: var(--secondary);
     text-align: left;
     width: 40%;
     margin-bottom: 3.5rem;
+    -webkit-text-stroke: 0.1rem var(--primary);
 }
 
 .name::after {
@@ -206,7 +207,8 @@ body {
 
 .dot {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--primary);
+    color: var(--secondary);
+    -webkit-text-stroke: 0.1rem var(--primary);
 }
 
 .anchor {
