@@ -186,11 +186,10 @@ body {
     font-size: 4rem;
     line-height: 4rem;
     font-weight: bold;
-    color: var(--secondary);
+    color: var(--tertiary0);
     text-align: left;
     width: 40%;
     margin-bottom: 3.5rem;
-    -webkit-text-stroke: 0.1rem var(--primary);
 }
 
 .name::after {
@@ -204,11 +203,9 @@ body {
     margin-right: 20rem;
 }
 
-
 .dot {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--secondary);
-    -webkit-text-stroke: 0.1rem var(--primary);
+    color: var(--primary);
 }
 
 .anchor {
@@ -299,22 +296,17 @@ body {
 }
 
 #about-me-section {
-    position: relative; /* Add relative positioning */
     display: flex;
     flex-direction: column;
     margin-top: 6.25rem;
-    align-items: center;
 }
 
-/* CSS for .about-me-heading */
 .about-me-heading {
     font-size: 4rem;
-    text-align: left;
-    margin-left: 3rem;
+    text-align: right;
+    margin-right: 6.25rem;
     font-weight: 200;
-    padding-right: 0;
-    margin-left: 70%;
-    margin-bottom: 12.5rem;
+    padding-left: 0;
     color: var(--tertiary0);
 }
 
@@ -323,11 +315,11 @@ body {
     border-bottom: 1px solid;
     border-color: var(--primary);
     display: block;
-    width: 0;
-    position: absolute;
+    width: 0%;
     right: 0;
-    transition: width 0.6s ease-in-out;
     margin-right: 6.25rem;
+    position: absolute;
+    transition: width 0.6s ease-in-out;
 }
 
 #about-me-section:hover .about-me-heading::after {
@@ -335,7 +327,6 @@ body {
 }
 
 .about-me-box {
-    height: 15rem;
     opacity: 100%;
     width: 80%;
     max-width: 100%; /* Ensure responsiveness */
@@ -344,15 +335,21 @@ body {
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     margin-bottom: 9rem;
+    margin-top: 6.25rem;
     border-radius: 20px;
     gap: 4rem;
     padding: 2rem;
     border: var(--primary) dashed 3px;
+    flex-wrap: wrap;
+    align-self: center; 
+
 }
 
 .about-paragraph {
     font-weight: 300;
     color: var(--tertiary0);
+    max-width: 40%;
+    min-width: 100%;
 }
 
 #technologies-section {
@@ -613,6 +610,14 @@ body {
     opacity: 0.8;
 }
 
+@media only screen and (max-width: 767px) {
+    /* Adjust scrollbar width for mobile */
+    .technologies-box::-webkit-scrollbar {
+      width: 20px; /* Adjust the width as needed */
+    }
 
-
+    .project-description {
+        font-size: 3rem;
+    }
+  }
 
