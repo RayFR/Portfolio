@@ -18,6 +18,7 @@ body {
     background-color: var(--secondary);
     z-index: 1;
     cursor: default !important;
+    font-size: 1.2rem;
 }
 
 .header {
@@ -350,6 +351,7 @@ body {
     color: var(--tertiary0);
     max-width: 40%;
     min-width: 100%;
+    font-weight: 200;
 }
 
 #technologies-section {
@@ -501,7 +503,6 @@ body {
 }
 
 .project-description {
-    font-size: 1.5rem;
     margin-top: 2rem;
     color: var(--tertiary0);
 }
@@ -610,14 +611,71 @@ body {
     opacity: 0.8;
 }
 
-@media only screen and ()(max-width: 767px) {
-    /* Adjust scrollbar width for mobile */
-    .technologies-box::-webkit-scrollbar {
-      width: 20px; /* Adjust the width as needed */
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .middle a {
+        display: none;
     }
 
-    .project-description {
-        font-size: 3rem;
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
     }
-  }
+    
+    .bar {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 25px;
+        height: 2px;
+        background-color: var(--primary);
+    }
 
+    .about-me-heading,
+    .technologies-heading,
+    .projects-heading {    
+        text-align: center;
+        margin: 0px;
+    }
+
+    .about-me-heading::after,
+    .technologies-heading::after,
+    .projects-heading::after {    
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .projects-box {
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-heading {
+        margin-bottom: 100px;
+    }
+
+    .project-info1,
+    .project-info2 {
+        margin: 0px;
+    }
+
+    .projects-info1::after {
+        content: "";
+        border-bottom: 1px solid;
+        border-color: var(--tertiary0);
+        position: relative;
+        width: 60vw;
+    }
+
+    .technologies-box {
+        width: 90%;
+    }
+}
