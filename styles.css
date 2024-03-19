@@ -556,36 +556,52 @@ body {
 
 #contact-box {
     border: 1px dashed var(--primary);
-    width: 31.25rem;
+    width: 50vw;
     max-width: 100%; /* Ensure responsiveness */
-    height: 25rem;
+    height:fit-content;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
+    padding: 1rem;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .form-group {
     margin-top: 1.25rem;
     display: flex;
     justify-content: center; /* Center horizontally */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-    gap: 0.6rem;
     color: var(--tertiary0);
+    gap: 0.5rem;
 }
 
 .form-control {
-    border: 1px solid black;
+    border: 1px solid var(--primary);
     border-radius: 5px;
-    background-color: var(--tertiary0);
+    background-color: var(--secondary);
     color: var(--secondary);
 }
 
+input[type=text],
+input[type=email],
+textarea[name=message] {
+    color: var(--tertiary0);
+    font-family: kanit;
+    font-size: 0.9rem;
+}
+
+#email-group {
+
+}
+
 #email {
-    width: 12.5rem;
-    margin-left: 0.5rem;
+    width: 100%;
 }
 
 #message {
@@ -737,5 +753,7 @@ body {
 
     #contact-box {
         padding: 1rem;
+        width: 92vw;
+        flex-wrap: wrap;
     }
 }
