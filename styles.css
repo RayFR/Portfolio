@@ -615,18 +615,22 @@ body {
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .middle a {
+        display: none;
+    }
+
+    .CV {
         display: none;
     }
 
     .hamburger-menu {
         display: flex;
         flex-direction: column;
-        padding: 10px;
         cursor: pointer;
         align-items: center;
         justify-content: center;
+        margin-right: 30px;
     }
     
     .bar {
@@ -649,6 +653,46 @@ body {
     .projects-heading::after {    
         width: 100vw;
         margin: 0px;
+    }
+
+    #introduction-section {
+        flex-direction: column;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        height: 60rem;
+    }
+
+    .wid-pic,
+    .name-socials {
+        margin: 0px;
+        margin-top: 3rem;
+        width: 80vw;
+        height: auto;
+    }
+
+    .wid {
+        margin-left: 0px;
+        width: auto;
+        text-align: center;
+    }
+
+    .name {
+        left: 0;
+        justify-self: center;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .me {
+        width: 80%;
+        height: 80%;
+    }
+
+    .technologies-box {
+        width: 90%;
+        gap: 5rem;
     }
 
     .projects-box {
@@ -675,7 +719,23 @@ body {
         width: 60vw;
     }
 
-    .technologies-box {
-        width: 90%;
+    .project-title {
+        margin-right: 0px;
+    }
+
+    .project-title::after {
+        margin-left: 0px;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-heading::after {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #contact-box {
+        padding: 1rem;
     }
 }
