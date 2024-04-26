@@ -297,6 +297,10 @@ body {
     text-align: center;
 }
 
+.h2 {
+    text-align: center;
+}
+
 .h3 {
     margin: 0.5rem;
 }
@@ -629,6 +633,10 @@ textarea[name=message] {
 }
 
 .hamburger-menu {
+    display: none;
+}
+
+.sidebar {
     display: none;
 }
 
