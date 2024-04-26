@@ -2,6 +2,11 @@
     --primary: rgb(42, 185, 185);
     --secondary: #0f0f0f;
     --tertiary0: #ffffff;
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --x-width: calc(var(--hamburger-height) * 1.41421356237)
 }
 
 p {
@@ -596,10 +601,6 @@ textarea[name=message] {
     font-size: 0.9rem;
 }
 
-#email-group {
-
-}
-
 #email {
     width: 100%;
 }
@@ -640,13 +641,55 @@ textarea[name=message] {
         display: none;
     }
 
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--tertiary0);
+        border-radius: 9999px;
+        transform-origin: left center;
+        transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
+    }
+
+    .hamburger-menu input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+    }
+
+    .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+    }
+
     .hamburger-menu {
         display: flex;
         flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: absolute;
+        z-index: 2;
         cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        margin-right: 30px;
+    }
+
+    .sidebar {
+        margin-top: calc(var(--hamburger-height) + 0rem);
     }
     
     .bar {
@@ -751,9 +794,18 @@ textarea[name=message] {
         margin: 0px;
     }
 
+    #contact-box div {
+        width: 100%;
+    }
+
     #contact-box {
-        padding: 1rem;
         width: 92vw;
-        flex-wrap: wrap;
+        padding: 10px;
+        padding-bottom: 1rem;
+    }
+    
+    .names {
+        display: flex;
+        flex-direction: column;
     }
 }
