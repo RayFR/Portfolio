@@ -269,7 +269,7 @@ body {
 
 .me {
     width: 50%;
-    height: 60%;
+    height: 80%;
     align-self: center;
     justify-self: center;
     border: 1px solid var(--secondary);
