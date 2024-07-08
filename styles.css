@@ -67,7 +67,8 @@ body {
     text-decoration: none;
 }
 
-.cornerR, .cornerL {
+.cornerR,
+.cornerL {
     font-size: 2.5rem;
     color: var(--primary);
     /*background-color: red; */
@@ -148,11 +149,13 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 10%;
     cursor: pointer;
-    transition: box-shadow 0.5s ease-in-out; /* Add transition property */
+    transition: box-shadow 0.5s ease-in-out;
+    /* Add transition property */
 }
 
 .CV:hover {
-    box-shadow: 0 0 0 1px var(--primary); /* Apply box shadow on hover */
+    box-shadow: 0 0 0 1px var(--primary);
+    /* Apply box shadow on hover */
 }
 
 
@@ -215,7 +218,7 @@ body {
 }
 
 .anchor {
-    text-decoration: none; 
+    text-decoration: none;
     color: var(--tertiary0);
 }
 
@@ -269,7 +272,7 @@ body {
 
 .me {
     width: 50%;
-    height: 80%;
+    height: 100%;
     align-self: center;
     justify-self: center;
     border: 1px solid var(--secondary);
@@ -281,7 +284,8 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    object-fit:cover;
+    object-fit: none;
+    object-position: 45% 20%;
 }
 
 .wid {
@@ -289,7 +293,7 @@ body {
     font-weight: 200;
     color: var(--primary);
     line-height: 3rem;
-    width: 70%; 
+    width: 70%;
     margin-left: 9rem;
 }
 
@@ -339,11 +343,14 @@ body {
 .about-me-box {
     opacity: 100%;
     width: 80%;
-    max-width: 100%; /* Ensure responsiveness */
+    max-width: 100%;
+    /* Ensure responsiveness */
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
     margin-bottom: 9rem;
     margin-top: 6.25rem;
     border-radius: 20px;
@@ -351,7 +358,7 @@ body {
     padding: 2rem;
     border: var(--primary) dashed 3px;
     flex-wrap: wrap;
-    align-self: center; 
+    align-self: center;
 
 }
 
@@ -432,7 +439,7 @@ body {
 }
 
 .icons {
-    max-width: 6.25rem; 
+    max-width: 6.25rem;
     max-height: 6.25rem;
     min-width: 6.25rem;
     min-height: 6.25rem;
@@ -534,7 +541,8 @@ body {
     font-weight: 200;
     margin-bottom: 1.25rem;
     margin-top: 12.5rem;
-    align-self: center; /* Center horizontally */
+    align-self: center;
+    /* Center horizontally */
     color: var(--tertiary0);
 }
 
@@ -547,7 +555,7 @@ body {
     margin-left: 44%;
     color: var(--primary);
     transition: width 0.6s ease-in-out;
-    position:absolute;
+    position: absolute;
     left: 50;
 }
 
@@ -557,22 +565,28 @@ body {
 
 #contact-me-section {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 3rem; /* Adjust margin-top as needed */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 3rem;
+    /* Adjust margin-top as needed */
     margin-bottom: 12.5rem;
 }
 
 #contact-box {
     border: 1px dashed var(--primary);
     width: 50vw;
-    max-width: 100%; /* Ensure responsiveness */
-    height:fit-content;
+    max-width: 100%;
+    /* Ensure responsiveness */
+    height: fit-content;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
     padding: 1rem;
 }
 
@@ -585,7 +599,8 @@ body {
 .form-group {
     margin-top: 1.25rem;
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    /* Center horizontally */
     color: var(--tertiary0);
     gap: 0.5rem;
 }
@@ -621,7 +636,7 @@ textarea[name=message] {
     background-color: var(--tertiary0);
     color: var(--secondary);
     border-color: var(--primarys);
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .submit-button:hover {
@@ -699,7 +714,7 @@ textarea[name=message] {
     .sidebar {
         margin-top: calc(var(--hamburger-height) + 0rem);
     }
-    
+
     .bar {
         margin-top: 3px;
         margin-bottom: 3px;
@@ -710,14 +725,14 @@ textarea[name=message] {
 
     .about-me-heading,
     .technologies-heading,
-    .projects-heading {    
+    .projects-heading {
         text-align: center;
         margin: 0px;
     }
 
     .about-me-heading::after,
     .technologies-heading::after,
-    .projects-heading::after {    
+    .projects-heading::after {
         width: 100vw;
         margin: 0px;
     }
@@ -811,7 +826,7 @@ textarea[name=message] {
         padding: 10px;
         padding-bottom: 1rem;
     }
-    
+
     .names {
         display: flex;
         flex-direction: column;
