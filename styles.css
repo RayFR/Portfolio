@@ -285,7 +285,7 @@ body {
 
 .me {
     width: 50%;
-    height: 100%;
+    height: 120%;
     align-self: center;
     justify-self: center;
     border: 1px solid var(--secondary);
@@ -296,9 +296,9 @@ body {
 .me img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-    object-fit: none;
-    object-position: 45% 20%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 45% 45%;
 }
 
 .wid {
