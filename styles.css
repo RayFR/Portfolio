@@ -24,6 +24,7 @@ body {
     z-index: 1;
     cursor: default !important;
     font-size: 1.2rem;
+    overflow-x: none;
 }
 
 .circle {
@@ -504,19 +505,8 @@ body {
 
 .project-title {
     align-self: center;
-    margin-right: 2rem;
     font-weight: 400;
     color: var(--tertiary0);
-}
-
-.project-title::after {
-    content: "";
-    border-bottom: 1px solid;
-    border-color: var(--primary);
-    display: block;
-    width: 30%;
-    opacity: 30%;
-    margin-left: 6rem;
 }
 
 .project-info1 {
@@ -699,59 +689,16 @@ textarea[name=message] {
         display: none;
     }
 
-    .CV {
-        display: none;
-    }
-
-    .hamburger-menu::before,
-    .hamburger-menu::after,
-    .hamburger-menu input {
-        content: "";
-        width: var(--bar-width);
-        height: var(--bar-height);
-        background-color: var(--tertiary0);
-        border-radius: 9999px;
-        transform-origin: left center;
-        transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
-    }
-
-    .hamburger-menu input {
-        appearance: none;
-        padding: 0;
-        margin: 0;
-        outline: none;
-        pointer-events: none;
-    }
-
-    .hamburger-menu input:checked {
-        opacity: 0;
-        width: 0;
-    }
-
-    .hamburger-menu:has(input:checked)::before {
-        rotate: 45deg;
-        width: var(--x-width);
-        translate: 0 calc(var(--bar-height) / -2);
-    }
-
-    .hamburger-menu:has(input:checked)::after {
-        rotate: -45deg;
-        width: var(--x-width);
-        translate: 0 calc(var(--bar-height) / 2);
-    }
-
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        gap: var(--hamburger-gap);
-        width: max-content;
-        position: absolute;
-        z-index: 2;
-        cursor: pointer;
-    }
-
     .sidebar {
         margin-top: calc(var(--hamburger-height) + 0rem);
+    }
+
+    .header {
+        margin-bottom: 100px;
+    }
+
+    .line {
+        display: none;
     }
 
     .bar {
@@ -766,7 +713,9 @@ textarea[name=message] {
     .technologies-heading,
     .projects-heading {
         text-align: center;
-        margin: 0px;
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
     .about-me-heading::after,
@@ -800,10 +749,11 @@ textarea[name=message] {
 
     .name {
         left: 0;
-        justify-self: center;
+        justify-self: end;
         width: auto;
         height: auto;
         text-align: center;
+        align-items: center;
     }
 
     .me {
@@ -816,6 +766,10 @@ textarea[name=message] {
         gap: 5rem;
     }
 
+    #projects-section {
+        margin-bottom: 400px;
+    }
+
     .projects-box {
         margin-top: 100px;
         flex-direction: column-reverse;
@@ -824,7 +778,7 @@ textarea[name=message] {
     }
 
     .projects-heading {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
     .project-info1,
@@ -835,6 +789,14 @@ textarea[name=message] {
     .project-title {
         margin-right: 0px;
         text-decoration: underline;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .contact-heading {
+        margin-bottom: 200px;
     }
 
     .contact-heading::after {
